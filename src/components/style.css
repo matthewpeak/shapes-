@@ -1,0 +1,82 @@
+
+.shapeMenu{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-family: Stellar ;
+    border-bottom:1px solid black;
+}
+
+.cube{
+  width: 200px;
+  height: 200px;
+  perspective: 600px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-100px);
+}
+.cubeFront{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transform: rotateY(  0deg) translateZ(100px);
+    border: 2px solid black;
+    text-align: center;
+}
+.cubeBottom{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transform: rotateX(-90deg) translateZ(100px); 
+    border: 2px solid black;
+    text-align: center;
+}
+.cubeBack{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transform: rotateY(180deg) translateZ(100px);
+    border: 2px solid black;
+    text-align: center;
+}
+.cubeTop{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transform: rotateX( 90deg) translateZ(100px);
+    border: 2px solid black;
+    text-align: center;
+}
+.cubeLeft{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transform: rotateY(-90deg) translateZ(100px); 
+    border: 2px solid black;
+    text-align: center;
+}
+.cubeRight{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transform: rotateY( 90deg) translateZ(100px);
+    border: 2px solid black;
+    text-align: center;
+}
+
+
+.py{
+    position: absolute;
+    left: 140px;
+    top: 150px;
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 120px solid #ccc;
+    perspective: 600px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-100px);
+}
+

@@ -5,12 +5,22 @@ import Sphere from './Sphere.js'
 
 const Display=({shape})=>{
  
- return(
-    <div>
-       <Sphere/>
-    </div> 
+    let displayShape = "";
+    
+    if (shape === 'pyramid'){
+        displayShape = <Pyramid/>
+    }else if( shape === 'cube' ){
+        displayShape = <Cube/>
+    }else if( shape === 'sphere' ){
+        displayShape = <Sphere/>
+    }
+ 
+    return(
+        <div>
+       { displayShape}
+        </div> 
 
- )
+    )
 }
 
 export default Display

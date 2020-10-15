@@ -1,4 +1,28 @@
 
+.sphere{
+    position: relative;
+
+   
+    width: 300px;
+    height: 300px;
+    margin: 3em auto;
+  
+    
+  
+  
+    
+    border-radius: 50%;
+    box-shadow: inset 20px 0 80px 6px rgba(0, 0, 0, 1);
+  
+   
+    transform-style: preserve-3d;
+   
+  }
+
+  
+
+
+
 .shapeMenu{
     display: flex;
     justify-content: space-around;
@@ -11,7 +35,9 @@
   width: 200px;
   height: 200px;
   perspective: 600px;
-  position: relative;
+  position: absolute;
+  left:43.5%;
+  top:30%;
   transform-style: preserve-3d;
   transform: translateZ(-100px);
 }
@@ -65,18 +91,23 @@
 }
 
 
-.py{
-    position: absolute;
-    left: 140px;
-    top: 150px;
-    width: 0;
-    height: 0;
-    border-left: 60px solid transparent;
-    border-right: 60px solid transparent;
-    border-bottom: 120px solid #ccc;
-    perspective: 600px;
-    position: relative;
-    transform-style: preserve-3d;
-    transform: translateZ(-100px);
+.camera{
+    width:200px;
+    height:200px;
+    perspective-origin:center center;
+    -moz-perspective-origin:center center;
+    -webkit-perspective-origin:center center;
+    perspective:500px;
+    -moz-perspective:500px;
+    -webkit-perspective:500px;
+}
+.space{
+    position:relative;
+    width:100%;
+    height:100%;
+    border:1px dashed #000;
+    transform-style:preserve-3d;
+    -moz-transform-style:preserve-3d;
+    -webkit-transform-style:preserve-3d;
 }
 
